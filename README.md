@@ -45,3 +45,8 @@
 **Теперь возвращайся к разработке. Твоя игра сама себя не придумает.** 🚀
 
 [🎮 Вернуться к презентации Play2Learn](https://i7ok.github.io/play2learn/)
+
+
+### Изображения классических игр
+
+На слайде 18 добавлены [Arkanoid](https://en.wikipedia.org/wiki/File:Arkanoid.png), [Pong](https://commons.wikimedia.org/wiki/File:Pong.png) и анимация [Tetris basic game](https://commons.wikimedia.org/wiki/File:Tetris_basic_game.gif). Автор анимации — Cezary Tomczak, Maxime Lorant, лицензия [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Анимация используется без изменений.

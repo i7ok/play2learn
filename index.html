@@ -791,6 +791,51 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
 .closing .speaker-links { margin-top: .6em; }
 .presentation-address { margin-top: 1.25em; color: var(--muted); }
 .presentation-address a { color: var(--violet); overflow-wrap: anywhere; }
+.classic-gallery {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(8px,1.3vw,20px);
+  margin:0 0 .8em;
+  }
+.classic-gallery figure {
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  }
+.classic-gallery img {
+  display:block;
+  width:100%;
+  height:clamp(110px,24vh,250px);
+  object-fit:contain;
+  background:#101019;
+  }
+.classic-gallery figcaption {
+  padding:.3em .6em;
+  font-size:.8em;
+  font-weight:700;
+  }
+.classic-gallery a {
+  color:var(--ink);
+  text-decoration-color:var(--line);
+  }
+#homework-prototype h2 {
+  max-width:none;
+  font-size:clamp(30px,4.6vw,66px);
+  }
+#homework-prototype .card {
+  padding:clamp(10px,1.3vw,20px);
+  }
+@media(max-width:560px) {
+  .classic-gallery img {
+  height:120px;
+  }
+  .classic-gallery figcaption {
+  font-size:.7em;
+  padding:.25em;
+  }
+}
 </style></head><body><header class="brand"><img src="assets/itmo-white.png" alt="Университет ИТМО" width="1040" height="410"></header><span class="slide-number" id="slide-number" aria-live="polite" aria-label="Слайд 1 из 19">1/19</span><main class="deck" id="deck">
 <section class="slide cover active"><div class="eyebrow">Вводная встреча</div><h1>От <span class="highlight">алгоритма</span><br>к игре</h1><p class="lead">Как превратить учебную задачу в интересную игру — и чему при этом научиться самому.</p><p class="mini">← → — слайды · F / А — полный экран · Home / End — начало / конец</p></section>
 <section class="slide">
@@ -1183,6 +1228,11 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
   <div class="eyebrow">Задание 2</div>
   <h2>Соберите браузерную игру</h2>
   <p class="lead">Воссоздайте простую классическую игру. Например, «Арканоид», «Тетрис» или «Понг».</p>
+  <div class="classic-gallery" aria-label="Примеры классических игр">
+    <figure><img src="assets/classics/arkanoid.png" alt="Арканоид — платформа, мяч и ряды блоков"><figcaption><a href="https://en.wikipedia.org/wiki/File:Arkanoid.png" target="_blank" rel="noopener">Арканоид</a></figcaption></figure>
+    <figure><img src="assets/classics/tetris.gif" alt="Тетрис — падающие фигуры на игровом поле"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Tetris_basic_game.gif" target="_blank" rel="noopener">Тетрис</a></figcaption></figure>
+    <figure><img src="assets/classics/pong.png" alt="Понг — две ракетки и мяч"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Pong.png" target="_blank" rel="noopener">Понг</a></figcaption></figure>
+  </div>
   <div class="grid">
     <div class="card">
       <h3>Сделайте и проверьте</h3>
