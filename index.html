@@ -793,14 +793,14 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
 .presentation-address a { color: var(--violet); overflow-wrap: anywhere; }
 .classic-gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, .875fr) minmax(0, .975fr) minmax(0, 1.333fr);
   gap: clamp(10px, 1.5vw, 24px);
   margin: 0 0 .85em;
 }
 .classic-gallery figure {
   --frame-accent: #7932cb;
   margin: 0;
-  padding: clamp(7px, .8vw, 11px);
+  padding: 0;
   overflow: hidden;
   border: 1px solid #d7c7e9;
   border-top: 4px solid var(--frame-accent);
@@ -813,16 +813,11 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
 .classic-gallery img {
   display: block;
   width: 100%;
-  height: clamp(110px, 24vh, 250px);
-  padding: 7px;
-  border: 1px solid #383047;
-  border-radius: 9px;
-  object-fit: contain;
-  background: #101019;
-  box-shadow: inset 0 0 0 3px #221c2e;
+  height: auto;
+  border: 0;
 }
 .classic-gallery figcaption {
-  padding: .45em .25em .05em;
+  padding: .45em .25em;
   font-size: .8em;
   font-weight: 700;
   text-align: center;
@@ -839,9 +834,8 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
 #homework-prototype .card { padding: clamp(10px, 1.3vw, 20px); }
 @media (max-width: 560px) {
   .classic-gallery { gap: 7px; }
-  .classic-gallery figure { padding: 5px; border-radius: 11px; }
-  .classic-gallery img { height: 120px; padding: 3px; border-radius: 6px; }
-  .classic-gallery figcaption { font-size: .7em; padding: .35em 0 0; }
+  .classic-gallery figure { border-radius: 11px; }
+  .classic-gallery figcaption { font-size: .7em; padding: .35em 0; }
 }
 </style></head><body><header class="brand"><img src="assets/itmo-white.png" alt="Университет ИТМО" width="1040" height="410"></header><span class="slide-number" id="slide-number" aria-live="polite" aria-label="Слайд 1 из 19">1/19</span><main class="deck" id="deck">
 <section class="slide cover active"><div class="eyebrow">Вводная встреча</div><h1>От <span class="highlight">алгоритма</span><br>к игре</h1><p class="lead">Как превратить учебную задачу в интересную игру — и чему при этом научиться самому.</p><p class="mini">← → — слайды · F / А — полный экран · Home / End — начало / конец</p></section>
