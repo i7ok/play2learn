@@ -49,4 +49,4 @@
 
 ### Изображения классических игр
 
-На слайде 18 добавлены [Arkanoid](https://en.wikipedia.org/wiki/File:Arkanoid.png), [Pong](https://commons.wikimedia.org/wiki/File:Pong.png) и анимация [Tetris basic game](https://commons.wikimedia.org/wiki/File:Tetris_basic_game.gif). Автор анимации — Cezary Tomczak, Maxime Lorant, лицензия [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Анимация используется без изменений.
+На слайде 18 добавлены [Arkanoid](https://en.wikipedia.org/wiki/File:Arkanoid.png), [Pong](https://commons.wikimedia.org/wiki/File:Pong.png) и кадр из [Tetris basic game](https://commons.wikimedia.org/wiki/File:Tetris_basic_game.gif). Авторы исходной анимации — Cezary Tomczak, Maxime Lorant, лицензия [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Для слайда выбран один статичный кадр исходной анимации.
