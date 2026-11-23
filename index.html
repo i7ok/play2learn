@@ -837,7 +837,24 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
   .classic-gallery figure { border-radius: 11px; }
   .classic-gallery figcaption { font-size: .7em; padding: .35em 0; }
 }
-</style></head><body><header class="brand"><img src="assets/itmo-white.png" alt="Университет ИТМО" width="1040" height="410"></header><span class="slide-number" id="slide-number" aria-live="polite" aria-label="Слайд 1 из 19">1/19</span><main class="deck" id="deck">
+.game-study h2 { max-width: none; font-size: clamp(30px, 4.2vw, 64px); }
+.game-study .eyebrow { margin-bottom: .6em; }
+.game-study .lead { margin: .45em 0 1em; }
+.game-study-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(20px, 3vw, 46px); align-items: center; }
+.game-study figure { margin: 0; }
+.game-study img { display: block; width: 100%; height: auto; max-height: 52vh; object-fit: contain; border-radius: 12px; }
+.game-study-copy h3 { color: var(--violet); font-size: .82em; margin-bottom: .4em; }
+.game-study-copy p { margin: 0 0 1em; font-size: .95em; }
+.game-study-links { display: flex; flex-wrap: wrap; gap: .6em 1.4em; font-size: .85em; }
+.game-study-links a { color: var(--violet); text-underline-offset: .18em; }
+.game-study a:focus-visible { outline: 3px solid var(--violet); outline-offset: 5px; }
+@media (max-width: 700px) {
+  .game-study-layout { grid-template-columns: 1fr; gap: 16px; }
+  .game-study img { max-height: 29vh; margin-inline: auto; }
+  .game-study .lead { font-size: .95em; margin-bottom: .75em; }
+  .game-study-copy p { font-size: .9em; margin-bottom: .75em; }
+}
+</style></head><body><header class="brand"><img src="assets/itmo-white.png" alt="Университет ИТМО" width="1040" height="410"></header><span class="slide-number" id="slide-number" aria-live="polite" aria-label="Слайд 1 из 28">1/28</span><main class="deck" id="deck">
 <section class="slide cover active"><div class="eyebrow">Вводная встреча</div><h1>От <span class="highlight">алгоритма</span><br>к игре</h1><p class="lead">Как превратить учебную задачу в интересную игру — и чему при этом научиться самому.</p><p class="mini">← → — слайды · F / А — полный экран · Home / End — начало / конец</p></section>
 <section class="slide">
   <div class="speaker-layout">
@@ -1256,6 +1273,168 @@ button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
   </nav>
   <p class="presentation-address">Презентация по адресу <a href="https://i7ok.github.io/play2learn/" target="_blank" rel="noopener">https://i7ok.github.io/play2learn/</a></p>
   <p class="note">Делаем хорошо, не делаем плохо.</p>
+</section>
+<section class="slide game-study" id="games-to-play-1">
+  <div class="eyebrow">Игры для знакомства / 1 из 9</div>
+  <h2>ДЗЫНЬ</h2>
+  <p class="lead">Аркада про электросамокат</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/dzyn/" target="_blank" rel="noopener" aria-label="Открыть игру «ДЗЫНЬ»"><img src="assets/gameplay/showcase/dzyn.webp" width="1440" height="756" alt="Самокатчик с башней пассажиров едет по улице и пугает пешеходов звонком" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Проверить, интересно ли само движение на самокате ещё до появления целей.</p>
+      <h3>Что сделано</h3>
+      <p>Бесконечная улица, езда без тормозов, лайки за риск и звонок. Попутчики складываются в качающуюся башню. Есть прыжки, дрифт и грайнд.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «ДЗЫНЬ»">
+        <a href="https://iansilent.github.io/dzyn/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/dzyn/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-2">
+  <div class="eyebrow">Игры для знакомства / 2 из 9</div>
+  <h2>Наверху</h2>
+  <p class="lead">Beat ’em up про доверие</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/upstairs/" target="_blank" rel="noopener" aria-label="Открыть игру «Наверху»"><img src="assets/gameplay/showcase/upstairs.webp" width="1440" height="756" alt="Герой с искрой в тёмной арене под скрытым этажом помощника" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Передать доверие через механику: игрок не видит помощника и не может им командовать.</p>
+      <h3>Что сделано</h3>
+      <p>Один уровень с драками, совместной головоломкой и финалом. Игрок отдаёт искры невидимому соседу, получает несовершенную помощь и решает, спасать ли его.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Наверху»">
+        <a href="https://iansilent.github.io/upstairs/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/upstairs/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-3">
+  <div class="eyebrow">Игры для знакомства / 3 из 9</div>
+  <h2>Грибной волшебник</h2>
+  <p class="lead">Платформер с двумя состояниями героя</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/mushroom-wizard/" target="_blank" rel="noopener" aria-label="Открыть игру «Грибной волшебник»"><img src="assets/gameplay/showcase/mushroom-wizard.webp" width="1440" height="756" alt="Грибной волшебник на платформе в неоновом мире третьей стадии опьянения" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Проверить, интересно ли управлять героем в противоположных состояниях и выбирать момент переключения.</p>
+      <h3>Что сделано</h3>
+      <p>Каждый прыжок усиливает опьянение. Короткая ясность даёт точность и одно из трёх заклинаний. Есть восемь учебных комнат, песочница и настройка движения.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Грибной волшебник»">
+        <a href="https://iansilent.github.io/mushroom-wizard/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/mushroom-wizard/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-4">
+  <div class="eyebrow">Игры для знакомства / 4 из 9</div>
+  <h2>Ржавый Грифон</h2>
+  <p class="lead">Лавка магического оружия</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/rusty-griffin/" target="_blank" rel="noopener" aria-label="Открыть игру «Ржавый Грифон»"><img src="assets/gameplay/showcase/rusty-griffin.webp" width="1440" height="756" alt="Посетитель оружейной лавки рассказывает о подвиге перед выбором изделия" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Собрать уютный цикл работы оружейной лавки, где заказ зависит от героя и его подвига.</p>
+      <h3>Что сделано</h3>
+      <p>Выбор изделия, материала и камня, ковка на точность и письма об исходе похода. Золото улучшает лавку, слава открывает сложные заказы. Герои возвращаются.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Ржавый Грифон»">
+        <a href="https://iansilent.github.io/rusty-griffin/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/rusty-griffin/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-5">
+  <div class="eyebrow">Игры для знакомства / 5 из 9</div>
+  <h2>Башня кота-волшебника</h2>
+  <p class="lead">Уютная рутина с печатями</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/cat-wizard-tower/" target="_blank" rel="noopener" aria-label="Открыть игру «Башня кота-волшебника»"><img src="assets/gameplay/showcase/cat-wizard-tower.webp" width="1440" height="756" alt="Кот-волшебник получает заказ от ворона в башне с книгами и камином" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Создать приятную рутину в магической библиотеке с заметным ростом башни.</p>
+      <h3>Что сделано</h3>
+      <p>Ворон приносит заказы. Игрок выбирает фолиант, рисует печать и переставляет книги ради бонусов. Пыль открывает артефакты, новые этажи и школы магии.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Башня кота-волшебника»">
+        <a href="https://iansilent.github.io/cat-wizard-tower/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/cat-wizard-tower/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-6">
+  <div class="eyebrow">Игры для знакомства / 6 из 9</div>
+  <h2>Тракт</h2>
+  <p class="lead">Визуальный прототип JRPG</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/trakt/" target="_blank" rel="noopener" aria-label="Открыть игру «Тракт»"><img src="assets/gameplay/showcase/trakt.webp" width="1440" height="756" alt="Боевая сцена Тракта с отрядом из четырёх героев и ярким меню действий" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Проверить внешний вид JRPG: персонажей, мир и выразительный боевой интерфейс.</p>
+      <h3>Что сделано</h3>
+      <p>Сцена боя с четырьмя героями и врагом, бесконечная дорога, карточки героев, экипировка и дерево развития. Параметры и предметы пока служат заглушками.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Тракт»">
+        <a href="https://iansilent.github.io/trakt/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/trakt/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-7">
+  <div class="eyebrow">Игры для знакомства / 7 из 9</div>
+  <h2>Wardbreaker</h2>
+  <p class="lead">Взлом магического замка</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/wardbreaker/" target="_blank" rel="noopener" aria-label="Открыть игру «Wardbreaker»"><img src="assets/gameplay/showcase/wardbreaker.webp" width="1440" height="756" alt="Дверь хранилища с пятью магическими печатями и гримуаром слева" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Сделать мини-игру, где игрок выводит скрытые знаки печатей по подсказкам и рисует их мышью.</p>
+      <h3>Что сделано</h3>
+      <p>Пять печатей и гримуар, распознавание штрихов, таймер и штрафы за ошибки. Два режима правил, связанные печати, случайные двери и настройка сложности.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Wardbreaker»">
+        <a href="https://iansilent.github.io/wardbreaker/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/wardbreaker/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-8">
+  <div class="eyebrow">Игры для знакомства / 8 из 9</div>
+  <h2>Аномальный пул</h2>
+  <p class="lead">Пул-рогалик</p>
+  <div class="game-study-layout">
+    <figure><a href="https://iansilent.github.io/anomalous-pool/" target="_blank" rel="noopener" aria-label="Открыть игру «Аномальный пул»"><img src="assets/gameplay/showcase/anomalous-pool.webp" width="1440" height="756" alt="Бильярдный стол Аномального пула со счётом раунда, силой удара и слотами артефактов" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Проверить, работает ли сборка комбинаций усилений, когда основное действие — физический удар в бильярде.</p>
+      <h3>Что сделано</h3>
+      <p>Раунды с целью по очкам и лимитом ударов. Комбо и трюки умножают счёт. Между раундами доступны награды и магазин, каждый третий раунд — босс с особым правилом.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Аномальный пул»">
+        <a href="https://iansilent.github.io/anomalous-pool/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/iansilent/anomalous-pool/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="slide game-study" id="games-to-play-9">
+  <div class="eyebrow">Игры для знакомства / 9 из 9</div>
+  <h2>Длинные руки</h2>
+  <p class="lead">Двор да дело</p>
+  <div class="game-study-layout">
+    <figure><a href="https://coca-in-a-cola.github.io/stretch-arms-prototype/" target="_blank" rel="noopener" aria-label="Открыть игру «Длинные руки»"><img src="assets/gameplay/showcase/stretch-arms-prototype.webp" width="1280" height="800" alt="Потасовка в баре Длинные руки с персонажами за стойкой и резиновыми руками игрока" decoding="async"></a></figure>
+    <div class="game-study-copy">
+      <h3>Задача прототипа</h3>
+      <p>Создать потасовку от первого лица с резиновыми руками в духе мультфильмов 1930-х.</p>
+      <h3>Что сделано</h3>
+      <p>Бар и улица, удары и броски предметов, враги за укрытиями и мирные персонажи. Есть обучение, комбо, предметы-шутки и управление мышью или жестами.</p>
+      <nav class="game-study-links" aria-label="Ссылки на игру «Длинные руки»">
+        <a href="https://coca-in-a-cola.github.io/stretch-arms-prototype/" target="_blank" rel="noopener">Играть ↗</a>
+        <a href="https://github.com/coca-in-a-cola/stretch-arms-prototype/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+      </nav>
+    </div>
+  </div>
 </section>
 </main><nav class="controls" aria-label="Управление слайдами"><button id="prev" aria-label="Предыдущий слайд">←</button><button id="next" aria-label="Следующий слайд">→</button></nav><script>
 const slides = [...document.querySelectorAll('.slide')];
